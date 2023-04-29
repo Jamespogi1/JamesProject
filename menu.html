@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morden's Pizza Menu</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+     
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("3.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;;
+  }
+  
+  
+    
+    .menu li {
+      display: flex;
+      align-items: flex-start;
+    }
+    .menu li .images {
+      margin-top: 300px;
+      margin-right: 20px;
+    }
+    .menu li img {
+      width: 300px;
+      height: 250px;
+    }
+    h1{
+  color: white;
+  font-size: 2em;
+  font-family: Order Pizza;
+    }
+    h2{
+      text-align: left;
+      margin-top: 5%;
+      color: white;
+      font-size: 4em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h3{
+      font-size: 1em;
+      font-family: Order Pizza;
+      color: yellowgreen;
+    }
+    .h1 span{
+      font-size: 2em;
+      font-family:Order Pizza;
+      color: yellowgreen;
+    } 
+    span{
+      font-size: 1em;
+      font-family: Order Pizza;
+      color:yellowgreen;
+    }
+    .banner {
+    background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pizza-banner-design-template-5623a47ee70d2ca4f3a4eca9c19a8039_screen.jpg?ts=1572691129");
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 5%;
+    
+    
+  }
+  nav a {
+    font-size: 130%;
+    margin-top: 2%;
+    padding: 1%;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .banner h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  i{
+    color:white;
+    margin-bottom: 2%;
+    
+  }
+  .container {
+  position:relative;
+  width: 500%;
+}
+ul{
+  margin: auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+  margin: auto;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  margin: auto;
+}
+
+.text {
+  background-color: transparent;
+  color: yellowgreen;
+  font-family: Order Pizza;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+p{
+  font-size: 120%;
+  color:white;
+}
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background:transparent;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-distributed {
+  background-color: rgb(34, 33, 33);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  margin-top: 15%;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  text-align: center;
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{color: yellowgreen;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>Morden's&nbsp;&nbsp;</span>Pizza</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner">
+  </section>
+  <main>
+    <section class="menu">
+      <h2>Our Menu</h2>
+      <ul>
+        <li>
+          <div class="container">
+            <img src="aloha.png" alt="Avatar" class="image" width="100" height="100">
+            <div class="middle">
+              <div class="text">Aloha Delight Pizza</div>
+              <p>A pizza with mozzarella cheese, pineapple, and tomato sauce</p>
+              <span>₱110</span>
+            </div>
+          </div>
+          <div class="container">
+            <img src="classic.png" alt="Avatar" class="image" width="100" height="100">
+            <div class="middle">
+              <div class="text">Classic Pizza</div>
+              <p>A classic pizza with ham, mozzarella cheese, and tomato sauce.</p>
+              <span>₱95</span>
+            </div>
+          </div>
+          <div class="container">
+            <img src="beef.png" alt="Avatar" class="image" width="100" height="100">
+            <div class="middle">
+              <div class="text">Beef with Cheese Pizza</div>
+              <p>A pizza with mushrooms, beef, redbell peppers, mozzaarella cheese, and tomato sauce.</p>
+              <span>₱115</span>
+            </div>
+          </div>
+          <div class="container">
+            <img src="double.png" alt="Avatar" class="image" width="100" height="100">
+            <div class="middle">
+              <div class="text">Double Cheese Pizza</div>
+              <p>A pizza with ham, mozzarella cheese, Creamy cheese and tomato sauce.</p>
+              <span>₱100</span>
+            </div>
+          </div>
+    </section>
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+  
+        <p class="footer-links">
+          <a class="link-1" href="home.html">Home</a>
+  
+          <a href="menu.html">Menu</a>
+  
+          <a href="about us.html">About</a>
+  
+          <a href="contact.html">Contact</a>
+        </p>
+  
+        <p>&copy;Morden's Pizza</p>
+      </div>
+  
+    </footer> 
+  </body>
+  </html>
+  

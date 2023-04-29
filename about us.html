@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morden's Pizza </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("3.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;;
+  }
+  
+  
+  header {
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-family: Order Pizza;
+    font-size: 20px;
+  }
+  
+  nav ul {
+    font-size: 130%;
+    padding: 0.1%;
+    text-align: right;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    font-size: 1.3em;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color:yellowgreen;
+  }
+    
+    .logo{
+        color: white;
+      font-family: Order Pizza;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 5px;
+    }
+    .logo span{
+      font-family: Order Pizza;
+      color: yellowgreen;
+    }
+    .menu a{
+      text-decoration: none;
+      color:black;
+      padding: 10px 200px;
+    }
+    .nav {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    padding: 20px;
+    }
+    
+    nav a:hover {
+    background-color: green;
+    }
+    body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: right;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  align-items: center;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+.container {
+  padding: 10px 10px;
+  align-items:center;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.row{
+    text-decoration: white;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+div.about-section{
+    font-size: 1.5em;
+}
+
+
+.title {
+  color:yellowgreen;
+}
+h1{
+    margin-bottom: 2%;
+    margin-top: 4%;
+    text-align: center;
+    color: yellowgreen;
+    font-size: 3em;
+}
+h2{
+    color:white
+}
+h4{
+    color:yellowgreen;
+    font-size: 3em;
+}
+img{
+    align-items: center;
+}
+div.container{
+    text-decoration-color: white;
+    text-align:justify;
+    font-size: 150%;
+}
+div.card{
+    float: center;
+    margin: auto;
+}
+div.img{
+    float: center;
+}
+div.column{
+    color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background:transparent;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-distributed {
+  background-color: rgb(34, 33, 33);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  text-align: center;
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{color: yellowgreen;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+</style>
+</head>
+<body>
+   <div class="background-image"></div>
+  <header>
+    <nav>
+      <div class="logo"><span>Morden's</span> Pizza</div>
+      <div class="Menu">
+        <a href="home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About us.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </nav>
+        <h1>About Us</h1>
+    <div class="about-section">
+        <p>Morden's Pizza is an affordable ready-to-eat pizza with the highest possible quality ingredients fresh from the market.</p>
+        <p>The store began in the early 2018 which was 5 years ago and people are still eager to buy to this very day because of its<p>
+        <p>unique taste and serving to its customers that makes people want to go back each day.</p>
+        <p>It is located near Mayor Mariano Velez St, Macanhan, Cagayan de Oro City.</p>
+      </div>
+      
+      <h4 style="text-align:center">Our Team</h4>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="dex1.jpg" alt="Dexter Dayadaya" style="width:25%">
+            <div class="container">
+              <h2>Dexter Dayadaya</h2>
+              <p class="title">Designer</p>
+              <p>The best design is the simplest</p>
+              <p>one that works</p>
+              <br>
+              <p><b>Email:</b>DexterDayadaya@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="james.jpg" alt="James Madayag" style="width:25%">
+            <div class="container">
+              <h2>James Madayag</h2>
+              <p class="title">Designer</p>
+              <p>Simplicity is the ultimate sophistication</p>
+              <br>
+              <p><b>Email:</b>JamesMadayag@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img src="carl.jpg" alt="Carl Madelo" style="width:25%">
+              <div class="container">
+                <h2>Carl Madelo</h2>
+                <p class="title">Designer</p>
+                <p>Design is not just what it looks like</p>
+                <p>and feels like. Design is how it works</p>
+                <br>
+                <p><b>Email:</b>Carlzmadelo@gmail.com</p>
+              </div>
+            </div>
+          </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="serg.jpg" alt="Serg Pizarro" style="width:25%">
+            <div class="container">
+              <h2>Serg Pizarro</h2>
+              <p class="title">Designer</p>
+              <p>Design is thinking made visual</p>
+              <p></p>
+              <p><b>Email:</b> SergPizarro@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about us.html">About</a>
+          <a href="contact.html">Contact</a>
+        </p>
+        <p>&copy;Morden's Pizza</p>
+      </div>
+    </footer>   

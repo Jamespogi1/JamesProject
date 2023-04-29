@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;;
+  }
+  
+  
+  header {
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-family: Order Pizza;
+    font-size: 20px;
+  }
+  
+  nav ul {
+    text-align: right;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color:yellowgreen;
+  }
+  
+  .banner {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+    border-color: #f00;
+  }
+  
+  .banner h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .btn {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: green;
+  }
+  
+  .menu {
+    padding: 20px;
+  }
+  
+  .menu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .menu li {
+    flex-basis: 33%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .menu h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .menu p {
+    margin-bottom: 10px;
+  }
+  
+  .menu span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f00;
+  }
+  .container{
+    max-width: 1200px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+    margin: auto;
+    background-color:transparent;
+    overflow:visible;
+  }
+  .images{
+    flex-direction: left;
+    justify-content: left;
+    align-items: left;
+    text-align:center;
+    object-fit: cover;
+    margin: 1px;
+    float: left;
+    width: 390px;
+  }
+  .images img{
+    flex-direction: left;
+    justify-content: left;
+    align-items: left;
+    width: 70%;
+    height: 70%;
+  }
+  
+  .order {
+    background-color: #f0e68c;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .order h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .order form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .order label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .order input,
+  .order select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .order input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .order button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .order button:hover {
+    background-color: green;
+  }
+  
+  
+  .contact input[type="submit"]:hover {
+    background-color: #c00;
+  }
+  .container{
+    width:50%;
+    height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h6{
+    color:#f0e68c;
+    margin-bottom:60px;
+  }
+  iframe{
+    width:50%
+    height:50px;
+    filter:invert(100%);
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  .modal-content {
+    background-color: white;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    text-align: center;
+  }
+
+  .close-btn {
+    margin-top: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    background-color: #005F6B;
+  }
+
+  
+  /* Footer styles */
+  footer {

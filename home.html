@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Morden's Pizza</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("3.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;;
+  }
+  
+  
+  header {
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-family: Order Pizza;
+    font-size: 20px;
+  }
+  
+  nav ul {
+    font-size: 130%;
+    padding: 0.1%;
+    text-align: right;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color:yellowgreen;
+  }
+  
+.btn {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: green;
+  }
+    h2{
+      font-size: 4em;
+      font-family: Order Pizza;
+    }
+    span{
+      font-family: Order Pizza;
+      color: yellowgreen;
+    }
+h1{
+  color: white;
+  font-size: 2em;
+}
+p{
+  color: yellowgreen;
+  font-family: Times New Roman;
+  font-size: 200%;
+  
+}
+i{
+  font-size: 35px;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background:transparent;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-distributed {
+  margin-top: 10%;
+  background-color: rgb(34, 33, 33);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  text-align: center;
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{color: yellowgreen;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+.csslider {
+  -moz-perspective: 1300px;
+  -ms-perspective: 1300px;
+  -webkit-perspective: 1300px;
+  perspective: 1300px;
+  display: inline-block;
+  margin-left: 28%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 22px;
+}
+/* Para maarrange ang format sa slideshow*/
+.csslider > input {
+  display: none;
+}
+.csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
+  margin-left: -900%;
+}
+.csslider > input:nth-of-type(9):checked ~ ul li:first-of-type {
+  margin-left: -800%;
+}
+.csslider > input:nth-of-type(8):checked ~ ul li:first-of-type {
+  margin-left: -700%;
+}
+.csslider > input:nth-of-type(7):checked ~ ul li:first-of-type {
+  margin-left: -600%;
+}
+.csslider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+  margin-left: -500%;
+}
+.csslider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+  margin-left: -400%;
+}
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+  margin-left: -300%;
+}
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+  margin-left: -200%;
+}
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+  margin-left: -100%;
+}
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+  margin-left: 0%;
+}
+.csslider > ul {
+  margin: auto;
+  position: relative;
+  width: 745px;
+  height: 600px;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: 5px solid transparent;
+  margin: 0 auto;
+  padding: 5;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.csslider > ul > li {
+  
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  font-size: initial;
+  line-height: normal;
+  -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: normal;
+}
+.csslider > ul > li.scrollable {
+  overflow-y:scroll;
+
+}
+.csslider > .navigation {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: 10;
+  margin-bottom: -10px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.csslider > .navigation > div {
+  margin-left: -100%;
+}
+.csslider > .navigation label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 4px;
+  background: #3a3a3a;
+}
+.csslider > .navigation label:hover:after {
+  opacity: 1;
+}
+.csslider > .navigation label:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  background: white;
+  border-radius: 50%;
+  padding: 6px;
+  opacity: 0;
+}
+.csslider > .arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.csslider.inside .navigation {
+  bottom: 10px;
+  margin-bottom: 10px;
+}
+.csslider.inside .navigation label {
+  border: 1px solid white;
+}
+/* For GREEN dots under images*/
+.csslider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after,
+.csslider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after,
+.csslider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after,
+.csslider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4):after,
+.csslider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5):after,
+.csslider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6):after,
+.csslider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7):after,
+.csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
+.csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
+.csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after 
+{
+  opacity: 1;
+}
+.csslider > .arrows {
+  position: absolute;
+  left: -31px;
+  top: 50%;
+  width: 100%;
+  height: 26px;
+  padding: 0 31px;
+  z-index: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.csslider > .arrows label {
+  display: none;
+  position: absolute;
+  top: -50%;
+  padding: 13px;
+  box-shadow: inset 2px -2px 0 1px #3a3a3a;
+  cursor: pointer;
+  -moz-transition: .15s;
+  -o-transition: .15s;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+.csslider > .arrows label:hover {
+  box-shadow: inset 3px -3px 0 2px white ;
+  margin: 0 0px;
+}
+.csslider > .arrows label:before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 300%;
+  width: 300%;
+}
+/* To command next (dili mubalik and slideshow pag wa ni)*/
+.csslider.infinity > input:first-of-type:checked ~ .arrows label:last-of-type,
+.csslider > input:nth-of-type(1):checked ~ .arrows label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows label:nth-of-type(4),
+.csslider > input:nth-of-type(6):checked ~ .arrows label:nth-of-type(5),
+.csslider > input:nth-of-type(7):checked ~ .arrows label:nth-of-type(6),
+.csslider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(7),
+.csslider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(😎),
+.csslider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(9),
+.csslider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(10)
+ {
+  display: block;
+  left: 0;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* To command back (dili munext and slideshow pag wa ni)*/
+.csslider.infinity > input:last-of-type:checked ~ .arrows label:first-of-type,
+.csslider > input:nth-of-type(1):checked ~ .arrows label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows label:nth-of-type(4),
+.csslider > input:nth-of-type(4):checked ~ .arrows label:nth-of-type(5),
+.csslider > input:nth-of-type(5):checked ~ .arrows label:nth-of-type(6),
+.csslider > input:nth-of-type(6):checked ~ .arrows label:nth-of-type(7),
+.csslider > input:nth-of-type(7):checked ~ .arrows label:nth-of-type(😎),
+.csslider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(9),
+.csslider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(10),
+.csslider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(11),
+.csslider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(12)
+ {
+  display: block;
+  right: 0;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>Morden's</span> Pizza</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+  <section class="banner">
+    <h2>Welcome &nbsp;&nbsp;&nbsp;to &nbsp;&nbsp;<span>Morden's</span>&nbsp;&nbsp; Pizza!</h2>
+    <p><i>Order your favorite pizza today!</i></p>
+    <a href="order.html" class="btn">Order Now</a>
+  </section>
+  <div class="csslider">
+    <input type="radio" name="slides" id="slides_1" checked />
+    <input type="radio" name="slides" id="slides_2" />
+    <input type="radio" name="slides" id="slides_3" />
+    <input type="radio" name="slides" id="slides_4" />
+    <input type="radio" name="slides" id="slides_5" />
+<input type="radio" name="slides" id="slides_6" />
+<input type="radio" name="slides" id="slides_7" />
+    <ul>
+        <li>
+  <p>Aloha Delight Pizza</p>
+  <img src="aloha.png">
+  </li>
+        <li>
+  <p>Classic Pizza</p>
+  <img src="classic.png">
+  </li>
+        <li>
+  <p>Beef with Cheese Pizza</p>
+  <img src="beef.png">
+  </li>
+        <li>
+  <img src="double.png">
+  <p>Double Cheese Pizza</p>
+  </li>  
+    </ul>
+    <div class="arrows">
+        <label for="slides_1"></label>
+        <label for="slides_2"></label>
+        <label for="slides_3"></label>
+        <label for="slides_4"></label>
+    </div>
+    <div class="navigation">
+        <div>
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            <label for="slides_4"></label>
+        </div>
+    </div>
+</div> 
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="home.html">Home</a>
+
+					<a href="menu.html">Menu</a>
+
+					<a href="about us.html">About</a>
+
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p>&copy;Morden's Pizza</p>
+			</div>
+
+		</footer>
+  </body>
+  </html>
